@@ -56,6 +56,7 @@ export default function Register() {
         <form onSubmit={handleRegister}>
           <input
             value={name}
+            
             /** 
              * "e" é o valor que a função recebe 
              * "setName(e.target.value)" é a corpo da função
