@@ -1,25 +1,13 @@
+// Componente é uma função que retorna html
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello Omnistack
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import './global.css';
+
+import Routes from './routes';
+
+function App() { // No react NÃO se pode colocar um elemento abaixo do outro sem nada em volta
+  return ( // Por isso se coloca uma div para segura-los
+    <Routes />
   );
 }
 
